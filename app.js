@@ -1,6 +1,6 @@
-import{
+import {
     Ball
-} from './ball.js';
+} from './ball.js'
 
 class App {
     constructor(){
@@ -29,8 +29,12 @@ class App {
     animate(t){
         window.requestAnimationFrame(this.animate.bind(this));
 
-        this.ctx.clearRect(0, 0, thos.stageWidth, this.stageHeight)
+        this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight)
 
         this.ball.draw(this.ctx, this.stageWidth, this.stageHeight)
     }
+}
+
+window.onload = () => {
+    new App();
 }

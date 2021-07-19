@@ -1,12 +1,12 @@
-export class Ball {
+/* export class Ball {
     constructor(stageWidth, stageHeight, radius, speed){
         this.radius = radius;
         this.vx = speed;
         this.vy = speed;
 
         const diameter = this.radius * 2;
-        this.x = diameter * (Math.random() * stageWidth - diameter)
-        this.y = diameter * (Math.random() * stageHeight - diameter)
+        this.x = diameter + (Math.random() * stageWidth - diameter);
+        this.y = diameter + (Math.random() * stageHeight - diameter);
     }
 
     draw(ctx, stageWidth, stageHeight){
@@ -17,7 +17,7 @@ export class Ball {
 
         ctx.fillStyle = '#fdd700';
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.random, 0, 2 * Math.PI);
+        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
         ctx.fill();
     }
 
@@ -35,4 +35,4 @@ export class Ball {
             this.y += this.vy;
         }
     }
-}
+} */
